@@ -13,6 +13,7 @@ public class WishController {
 
 	@GetMapping("/msg/{name}")
 	public ResponseEntity<String> wishMessage(@PathVariable(name="name") String name){
+		//response
 		return new ResponseEntity<String>("Welcome "+name , HttpStatus.OK);
 	}
 }
